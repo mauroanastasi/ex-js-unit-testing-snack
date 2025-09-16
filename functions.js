@@ -12,9 +12,14 @@ function average(arr) {
     return result
 }
 
+function isPalindrome(parola) {
+    return parola.split("").reverse().join("")
+}
+
 module.exports = {
     getInitials,
     createSlug,
     average,
+    isPalindrome
 
 };

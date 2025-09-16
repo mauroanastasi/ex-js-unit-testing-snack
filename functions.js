@@ -3,7 +3,7 @@ function getInitials(stringa) {
 }
 
 function createSlug(str) {
-    return str.slice(0).toLowerCase()
+    return str.slice(0).toLowerCase().split(" ").join("-")
 }
 
 function average(arr) {
@@ -15,5 +15,6 @@ function average(arr) {
 module.exports = {
     getInitials,
     createSlug,
-    average
+    average,
+
 };
